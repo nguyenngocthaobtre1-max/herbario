@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HERBARIO – Xịt Dưỡng Tóc Vỏ Bưởi & Bồ Kết | 100% Thuần Chay</title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Montserrat:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ====== BIẾN MÀU & RESET ====== */
+:root{
+  --primary:#1A3C34;
+  --secondary:#2C5E4F;
+  --accent:#D4AF37;
+  --accent-light:#E8C87A;
+  --green-mid:#3D6B2A;
+  --green-sage:#7BA05B;
+  --green-mist:#C8DDB8;
+  --bg-milk:#F4F7F2;
+  --bg-gray:#E9EDEA;
+  --text-dark:#1A2A14;
+  --white:#FFFFFF;
+  --transition:all 0.4s cubic-bezier(0.165,0.84,0.44,1);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Montserrat',sans-serif;line-height:1.6;color:var(--text-dark);background:var(--bg-milk);overflow-x:hidden;}
+h1,h2,h3{font-family:'Playfair Display',serif;}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 15px;}
+.section-padding{padding:80px 0;}
+.bg-gray{background:var(--bg-gray);}
+.text-center{text-align:center;}
+
+/* ====== THANH CHỮ CHẠY ====== */
+.top-bar{
+  background:var(--primary);
+  color:#fff;
+  padding:10px 0;
+  overflow:hidden;
+  white-space:nowrap;
+  font-weight:700;
+  font-size:13px;
+  letter-spacing:1px;
+  box-shadow:0 2px 10px rgba(26,60,52,0.3);
+}
+.marquee-text{display:inline-block;padding-left:100%;animation:marquee 28s linear infinite;}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+
+/* ====== HEADER ====== */
+header{
+  background:rgba(244,247,242,0.96);
+  padding:15px 0;
+  box-shadow:0 5px 20px rgba(0,0,0,0.06);
+  position:sticky;
+  top:0;
+  z-index:1000;
+  backdrop-filter:blur(8px);
+}
+.header-wrap{display:flex;justify-content:space-between;align-items:center;}
+.logo{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--text-dark);letter-spacing:3px;text-decoration:none;}
+.logo span{color:var(--accent);}
+.nav-links{list-style:none;display:flex;}
+.nav-links li{margin-left:30px;}
+.nav-links a{
+  text-decoration:none;color:var(--text-dark);font-weight:700;font-size:13px;
+  text-transform:uppercase;padding:9px 20px;border:2px solid transparent;
+  border-radius:50px;transition:all 0.3s ease;display:inline-block;letter-spacing:0.5px;
+}
+.nav-links li a.active,
+.nav-links li a:hover{border-color:var(--primary)!important;color:var(--primary)!important;}
+
+
+
+
+
+
+
+
+
+/* ====== BANNER SLIDER (phong cách trangchu) ====== */
+.main-banner{width:100%;height:88vh;overflow:hidden;position:relative;}
+.banner-track{display:flex;width:400%;height:100%;animation:slideAnim 24s infinite;}
+.slide{
+  width:100%;height:100%;
+  background-size:cover;background-position:center;
+  position:relative;overflow:hidden;
+}
+/* Ken Burns per slide */
+.slide::before{
+  content:'';position:absolute;top:0;left:0;width:100%;height:100%;
+  background-size:cover;background-position:center;z-index:-1;
+  animation:zoomEffect 6s infinite alternate;
+}
+.s1::before{background-image:linear-gradient(rgba(26,60,52,0.7),rgba(0,0,0,0.5)),url('/imghero-background.png'); }
+.s2::before{background-image:linear-gradient(rgba(26,60,52,0.65),rgba(0,0,0,0.45)),url('/imganh-ngang-4.png'); }
+.s3::before{background-image:linear-gradient(rgba(42,74,30,0.7),rgba(0,0,0,0.5)),url('/imganh-ngang-3.jpg'); }
+.s4::before{background-image:linear-gradient(rgba(26,60,52,0.65),rgba(0,0,0,0.45)),url('/imganh-ngang-lyly.jpeg'); }
+@keyframes zoomEffect{from{transform:scale(1)}to{transform:scale(1.12)}}
+.slide::after{
+  content:'';position:absolute;top:0;left:0;width:100%;height:100%;
+  background:linear-gradient(to bottom,rgba(0,0,0,0.1),rgba(0,0,0,0.5));z-index:1;
+}
+@keyframes slideAnim{
+  0%,20%{transform:translateX(0)}
+  25%,45%{transform:translateX(-25%)}
+  50%,70%{transform:translateX(-50%)}
+  75%,95%{transform:translateX(-75%)}
+  100%{transform:translateX(0)}
+}
+.overlay-text{
+  position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  z-index:10;text-align:center;color:#fff;width:90%;
+}
+.overlay-text h1{
+  font-size:clamp(2rem,5.5vw,4.5rem);font-weight:700;
+  letter-spacing:2px;text-shadow:0 10px 30px rgba(0,0,0,0.4);
+  margin-bottom:16px;
+}
+.overlay-text p{font-size:clamp(14px,1.8vw,20px);opacity:0.85;margin-bottom:28px;font-weight:300;}
+.btn-main{
+  display:inline-block;padding:15px 40px;background:var(--accent);
+  color:#fff;text-decoration:none;border-radius:50px;font-weight:800;
+  margin-top:10px;transition:0.4s;box-shadow:0 10px 25px rgba(212,175,55,0.4);
+  font-size:14px;letter-spacing:1px;text-transform:uppercase;position:relative;overflow:hidden;
+}
+.btn-main::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:rgba(255,255,255,0.2);transition:0.5s;}
+.btn-main:hover::before{left:100%;}
+.btn-main:hover{background:var(--primary);transform:translateY(-5px);box-shadow:0 15px 35px rgba(26,60,52,0.4);}
+
+/* Thanh ánh sáng chạy trên banner */
+.main-banner{position:relative;overflow:hidden;}
+.main-banner::after{
+  content:'';position:absolute;top:0;left:-120%;width:60%;height:100%;
+  background:linear-gradient(120deg,transparent,rgba(255,255,255,0.2),transparent);
+  transform:skewX(-25deg);animation:shineBanner 6s linear infinite;z-index:5;pointer-events:none;
+}
+@keyframes shineBanner{100%{left:150%}}
+
+/* Banner fade-in */
+.main-banner{animation:bannerFade 1.5s ease;}
+@keyframes bannerFade{from{opacity:0;transform:scale(1.04)}to{opacity:1;transform:scale(1)}}
+.overlay-text h1{animation:textZoom 2s ease;}
+@keyframes textZoom{from{opacity:0;transform:translateY(40px) scale(0.92)}to{opacity:1;transform:translateY(0) scale(1)}}
+
+/* ====== STATS BELT ====== */
+.stats-belt{background:var(--primary);padding:28px 0;}
+.stats-grid{display:flex;justify-content:center;flex-wrap:wrap;}
+.stat-block{text-align:center;padding:0 50px;border-right:1px solid rgba(255,255,255,0.18);flex-shrink:0;}
+.stat-block:last-child{border-right:none;}
+.stat-num{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:#fff;line-height:1;}
+.stat-desc{font-size:0.75rem;color:rgba(255,255,255,0.65);margin-top:4px;font-weight:500;}
+
+/* ====== GIỚI THIỆU 2 CỘT (phong cách about-flex) ====== */
+.about-flex{display:flex;align-items:center;gap:60px;}
+.about-image img{width:100%;border-radius:25px;box-shadow:0 20px 40px rgba(0,0,0,0.1);}
+.about-text span{color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:13px;}
+.about-text h2{font-size:clamp(1.8rem,3.5vw,3rem);margin:10px 0 20px;line-height:1.15;position:relative;padding-bottom:15px;}
+.about-text h2::after{content:'';position:absolute;bottom:0;left:0;width:60px;height:4px;background:var(--accent);}
+.about-text p{font-size:16px;color:#555;margin-bottom:20px;}
+.btn-outline{
+  display:inline-block;padding:12px 30px;border:2px solid var(--primary);
+  color:var(--primary);text-decoration:none;border-radius:50px;font-weight:700;
+  margin-top:10px;transition:0.3s;font-size:13px;text-transform:uppercase;position:relative;overflow:hidden;
+}
+.btn-outline::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:rgba(26,60,52,0.08);transition:0.4s;}
+.btn-outline:hover::before{left:100%;}
+.btn-outline:hover{background:var(--primary);color:#fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== FEATURE GRID 4 CỘT (ưu điểm) ====== */
+
+
+
+
+
+/* ====== USP BACKGROUND ĐỔNG THEO HOVER ====== */
+.usp-section {
+  position: relative;
+  overflow: hidden;
+  /* Xóa background: var(--text-dark) cũ nếu có, thay bằng: */
+  background-color: #0d1f0e;
+}
+
+/* Lớp ảnh nền — nằm phía sau tất cả */
+.usp-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  transition: opacity 0.7s ease;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+}
+
+.usp-bg.active {
+  opacity: 1;
+}
+
+/* Lớp phủ tối để chữ luôn nổi */
+.usp-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to right,
+    rgba(13, 31, 14, 0.92) 45%,
+    rgba(13, 31, 14, 0.55) 100%
+  );
+}
+
+/* Đẩy nội dung lên trên lớp ảnh */
+.usp-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Row sáng hơn khi hover */
+.usp-row:hover .usp-word {
+  color: rgba(255,255,255,0.9);
+}
+
+
+
+
+
+
+
+
+
+
+.section-title-block{text-align:center;margin-bottom:55px;}
+.section-title-block h2{font-size:clamp(1.8rem,3vw,2.8rem);font-weight:700;color:var(--text-dark);}
+.section-title-block p{color:#666;font-size:16px;margin-top:8px;}
+.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px;margin-top:40px;}
+.feature-item{
+  padding:38px 20px;background:#fff;border-radius:20px;text-align:center;
+  transition:all 0.4s ease;border:1px solid #eee;box-shadow:0 10px 25px rgba(0,0,0,0.03);
+  position:relative;overflow:hidden;
+}
+.feature-item::before{
+  content:'';position:absolute;width:200%;height:200%;
+  background:rgba(255,255,255,0.08);transform:rotate(45deg);top:-180%;left:-50%;transition:0.8s;
+}
+.feature-item:hover::before{top:120%;}
+.feature-item:hover{
+  transform:translateY(-15px);
+  background:linear-gradient(135deg,var(--primary) 0%,var(--secondary) 100%);
+  box-shadow:0 20px 40px rgba(26,60,52,0.25);border-color:transparent;
+}
+.feature-icon{font-size:38px;color:var(--primary);margin-bottom:18px;display:block;transition:0.3s;}
+.feature-item:hover h3,.feature-item:hover p,.feature-item:hover .feature-icon{color:#fff;}
+.feature-item h3{margin-bottom:12px;font-size:18px;color:var(--text-dark);font-weight:700;}
+.feature-item p{font-size:13px;color:#666;}
+
+/* ====== TOUR GRID → SẢN PHẨM CARDS ====== */
+.product-grid{display:flex;gap:25px;transition:0.5s ease;}
+.product-card{
+  flex:1;background:#fff;border-radius:25px;overflow:hidden;position:relative;
+  cursor:pointer;transition:all 0.5s cubic-bezier(0.165,0.84,0.44,1);
+  box-shadow:0 10px 35px rgba(0,0,0,0.08);opacity:1;transform:scale(0.95);
+}
+.product-grid:hover .product-card{opacity:0.4;filter:blur(1px) brightness(0.7);transform:scale(0.92);}
+.product-grid .product-card:hover{
+  flex:1.3;opacity:1;filter:none;transform:scale(1.04) translateY(-12px);
+  z-index:10;border:2px solid var(--accent);
+  box-shadow:0 25px 50px rgba(212,175,55,0.2),0 10px 20px rgba(0,0,0,0.12);
+}
+.prod-img{position:relative;height:260px;overflow:hidden;}
+.prod-img img{width:100%;height:100%;object-fit:cover;transition:1s ease;}
+.product-card:hover .prod-img img{transform:scale(1.15) rotate(1deg);}
+.prod-img::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0.05));
+  opacity:0;transition:0.5s;
+}
+.product-card:hover .prod-img::after{opacity:1;}
+.prod-badge{
+  position:absolute;bottom:18px;left:18px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-light));
+  color:#fff;padding:8px 22px;border-radius:50px;font-weight:800;font-size:16px;
+  z-index:2;box-shadow:0 8px 20px rgba(212,175,55,0.35);transition:0.4s;
+}
+.product-card:hover .prod-badge{transform:scale(1.08);}
+.prod-detail{padding:26px;}
+.prod-detail h3{font-size:19px;margin-bottom:10px;color:var(--text-dark);transition:0.3s;}
+.product-card:hover h3{color:var(--primary);}
+.prod-detail p{color:#666;font-size:13px;margin-bottom:16px;}
+.link-more{color:var(--primary);font-weight:800;text-decoration:none;font-size:13px;text-transform:uppercase;letter-spacing:1px;transition:0.3s;}
+.product-card:hover .link-more{padding-left:10px;letter-spacing:2px;}
+
+/* ====== VẤN ĐỀ TÓC (2 col grid) ====== */
+.problem-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:35px;margin-top:50px;}
+.problem-card{
+  background:#fff;border-radius:25px;overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);transition:0.5s;position:relative;
+}
+.problem-card:hover{transform:translateY(-12px);box-shadow:0 20px 50px rgba(26,60,52,0.15);}
+.problem-card::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(26,60,52,0.1),transparent);
+  opacity:0;transition:0.5s;pointer-events:none;
+}
+.problem-card:hover::before{opacity:1;}
+.prob-img-box{height:260px;overflow:hidden;}
+.prob-img-box img{width:100%;height:100%;object-fit:cover;transition:1.5s ease;}
+.problem-card:hover .prob-img-box img{transform:scale(1.1);}
+.prob-info{padding:28px;}
+.prob-icon-wrap{
+  width:50px;height:50px;background:linear-gradient(135deg,var(--primary),var(--secondary));
+  border-radius:14px;display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:22px;margin-bottom:14px;
+}
+.prob-info h3{font-size:21px;margin-bottom:10px;color:var(--text-dark);}
+.prob-info p{color:#636e72;font-size:14px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== DARK STATS ====== */
+/* ====== DARK STATS - NÂNG CẤP ====== */
+.dark-section {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  background: #0a1a0c;
+}
+
+/* Ảnh nền với overlay */
+.dark-bg {
+  position: absolute;
+  inset: 0;
+  background: url('/imgnen.png') center/cover no-repeat;
+  /* Thay '/imgdark-bg.jpg' bằng ảnh tóc/thảo mộc của bạn */
+  opacity: 0.25;
+  z-index: 0;
+}
+
+/* Lớp gradient phủ */
+.dark-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 26, 12, 0.97) 0%,
+    rgba(26, 60, 52, 0.85) 50%,
+    rgba(10, 26, 12, 0.97) 100%
+  );
+  z-index: 1;
+}
+
+/* Vòng tròn trang trí nền */
+.dark-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(200, 221, 184, 0.08);
+  z-index: 1;
+  animation: pulse-dark 8s ease-in-out infinite;
+}
+.dc1 { width: 600px; height: 600px; top: -200px; right: -150px; }
+.dc2 { width: 400px; height: 400px; bottom: -100px; left: -100px; animation-delay: 3s; }
+.dc3 { width: 200px; height: 200px; top: 40%; right: 15%; animation-delay: 5s; }
+@keyframes pulse-dark {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50%       { transform: scale(1.06); opacity: 1; }
+}
+
+/* Nội dung trên lớp nền */
+.dark-section .container {
+  position: relative;
+  z-index: 2;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* PHẦN TRÊN: tiêu đề + 3 stat card ngang */
+.dark-top {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.dark-top h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+.dark-top h2 em { font-style: italic; color: var(--green-mist); }
+
+/* 3 STAT CARDS NGANG */
+.stat-cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.stat-card-big {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(200,221,184,0.15);
+  border-radius: 20px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+.stat-card-big::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(90,140,62,0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.stat-card-big:hover {
+  border-color: rgba(200,221,184,0.4);
+  transform: translateY(-8px);
+  background: rgba(255,255,255,0.07);
+}
+.stat-card-big:hover::before { opacity: 1; }
+.stat-card-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--green-mist);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.stat-card-label {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.6;
+}
+.stat-card-icon {
+  font-size: 28px;
+  margin-bottom: 16px;
+  display: block;
+  color: var(--green-sage);
+}
+
+/* PHẦN DƯỚI: 2 cột (ảnh + triệu chứng) */
+.dark-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* CỘT TRÁI: ảnh khối */
+.dark-img-col {
+  position: relative;
+  height: 420px;
+}
+.dark-img-main {
+  position: absolute;
+  width: 70%;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  top: 0; left: 0;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+}
+.dark-img-main img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.dark-img-main:hover img { transform: scale(1.06); }
+
+.dark-img-sub {
+  position: absolute;
+  width: 55%;
+  height: 220px;
+  border-radius: 16px;
+  overflow: hidden;
+  bottom: 0; right: 0;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  border: 3px solid rgba(200,221,184,0.2);
+}
+.dark-img-sub img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.dark-img-sub:hover img { transform: scale(1.06); }
+
+/* Tag nổi trên ảnh */
+.dark-img-tag {
+  position: absolute;
+  top: 14px; right: 14px;
+  background: var(--accent);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 5;
+}
+
+/* CỘT PHẢI: triệu chứng */
+.dark-symptom-col h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.symptom-list { list-style: none; }
+.symptom-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  color: rgba(255,255,255,0.65);
+  font-size: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  transition: all 0.3s;
+}
+.symptom-list li:hover {
+  color: rgba(255,255,255,0.9);
+  padding-left: 6px;
+}
+.symptom-list li::before {
+  content: '—';
+  color: var(--green-sage);
+  flex-shrink: 0;
+  font-weight: 700;
+}
+.bridge-quote {
+  margin-top: 24px;
+  padding: 20px 24px;
+  background: rgba(90,140,62,0.1);
+  border-left: 3px solid var(--green-sage);
+  border-radius: 0 16px 16px 0;
+}
+.bridge-quote p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.75;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .stat-cards-row  { grid-template-columns: 1fr; }
+  .dark-bottom     { grid-template-columns: 1fr; }
+  .dark-img-col    { height: 300px; }
+}
+
+
+
+
+
+
+
+
+
+/* ====== USP LỚN (phong cách big words) ====== */
+.usp-section{background:var(--text-dark);padding:80px 0;}
+.usp-list{margin-top:35px;}
+.usp-row{
+  display:flex;align-items:center;gap:24px;
+  padding:26px 0;border-bottom:1px solid rgba(255,255,255,0.07);
+  transition:all 0.4s;cursor:default;
+}
+.usp-row:hover{padding-left:12px;}
+.usp-row:hover .usp-word{color:rgba(255,255,255,0.95);}
+.usp-n{font-size:0.7rem;color:var(--green-sage);letter-spacing:0.12em;min-width:28px;flex-shrink:0;}
+.usp-word{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,3.2rem);font-weight:700;color:rgba(255,255,255,0.12);flex:1;transition:color 0.4s;}
+.usp-word.active{color:#fff;}
+.usp-detail{max-width:360px;text-align:right;font-size:13px;color:rgba(255,255,255,0.4);line-height:1.65;opacity:0;transition:opacity 0.4s;}
+.usp-row:hover .usp-detail{opacity:1;color:rgba(255,255,255,0.6);}
+
+/* ====== SẢN PHẨM MUA NGAY ====== */
+
+
+/* ====== GALLERY ẢNH SẢN PHẨM ====== */
+.gallery-wrap {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+/* CỘT THUMBNAIL */
+.thumb-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.thumb-item {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2.5px solid transparent;
+  transition: all 0.3s ease;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.thumb-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.thumb-item:hover {
+  border-color: #D4AF37;
+  transform: translateX(4px);
+}
+
+.thumb-item:hover img {
+  transform: scale(1.08);
+}
+
+/* Thumbnail đang active */
+.thumb-item.active {
+  border-color: #1A3C34;
+  box-shadow: 0 6px 20px rgba(26,60,52,0.2);
+  transform: translateX(4px);
+}
+
+/* ẢNH LỚN */
+.main-img-box {
+  position: relative;
+  flex: 1;
+  background: #fff;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  overflow: visible;
+  transition: box-shadow 0.4s ease;
+}
+
+.main-img-box:hover {
+  box-shadow: 0 30px 65px rgba(26,60,52,0.15);
+}
+
+.main-img-box img {
+  width: 100%;
+  height: 460px;
+  object-fit: contain;
+  display: block;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+/* Hiệu ứng fade khi đổi ảnh */
+.main-img-box img.switching {
+  opacity: 0;
+  transform: scale(0.96);
+}
+
+
+
+
+
+
+
+
+.offer-section{background:linear-gradient(135deg,#F4F7F2 0%,#E8F0E4 100%);padding:80px 0;}
+.offer-grid{display:grid;grid-template-columns:1.2fr 1fr;;gap:50px;align-items:center;}
+.offer-visual{position:relative;display:flex;justify-content:center;}
+.product-img-wrap{
+  position:relative;background:#fff;border-radius:35px;padding:40px;
+  box-shadow:0 25px 60px rgba(0,0,0,0.1);transition:0.5s;
+}
+.product-img-wrap:hover{transform:translateY(-10px);box-shadow:0 35px 70px rgba(26,60,52,0.15);}
+.product-img-wrap img{width:280px;height:auto;margin:0 auto;display:block;filter:drop-shadow(0 20px 30px rgba(0,0,0,0.15));}
+.floating-badge{
+  position:absolute;top:-15px;right:-15px;z-index: 10;
+  background:var(--accent);color:#fff;width:90px;height:90px;border-radius:50%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;font-weight:800;box-shadow:0 10px 25px rgba(212,175,55,0.4);
+  animation:floatBadge 3s ease-in-out infinite;
+}
+.floating-badge span{font-size:11px;text-transform:uppercase;}
+.floating-badge strong{font-family:'Playfair Display',serif;font-size:1.4rem;line-height:1;}
+@keyframes floatBadge{0%,100%{transform:rotate(12deg) translateY(0)}50%{transform:rotate(12deg) translateY(-10px)}}
+.offer-info .stars{color:var(--accent);font-size:1rem;margin-bottom:12px;}
+.offer-info .stars span{color:#777;font-size:13px;margin-left:8px;}
+.offer-info h2{font-size:clamp(1.6rem,2.8vw,2.4rem);color:var(--primary);margin-bottom:18px;line-height:1.3;}
+.offer-info p.desc{font-size:15px;color:#555;margin-bottom:28px;line-height:1.75;}
+.price-box{
+  background:#fff;border-left:5px solid var(--primary);border-radius:0 12px 12px 0;
+  padding:20px 25px;margin-bottom:28px;box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+.price-box .price-current{display:block;font-family:'Playfair Display',serif;font-size:2.6rem;font-weight:700;color:var(--accent);line-height:1;margin-bottom:5px;}
+.price-box .price-note{font-size:13px;color:#888;font-style:italic;}
+.benefits-list{list-style:none;margin-bottom:32px;}
+.benefits-list li{font-size:14px;color:var(--text-dark);margin-bottom:12px;display:flex;align-items:flex-start;gap:12px;}
+.benefits-list li i{color:var(--primary);margin-top:3px;}
+.buy-btns{display:flex;flex-direction:column;gap:14px;margin-bottom:22px;}
+.btn-buy-main,.btn-buy-shopee{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  padding:17px 28px;border-radius:12px;font-size:14px;font-weight:800;
+  text-transform:uppercase;letter-spacing:1px;transition:all 0.4s;text-decoration:none;
+}
+.btn-buy-main{background:var(--primary);color:#fff;box-shadow:0 10px 25px rgba(26,60,52,0.25);}
+.btn-buy-main:hover{background:var(--accent);transform:translateY(-3px);}
+.btn-buy-shopee{background:#fff;color:#EE4D2D;border:2px solid #EE4D2D;}
+.btn-buy-shopee:hover{background:#EE4D2D;color:#fff;transform:translateY(-3px);}
+.guarantee-txt{font-size:13px;color:#888;text-align:center;display:flex;align-items:center;justify-content:center;gap:8px;}
+.guarantee-txt i{color:var(--primary);}
+
+/* ====== BLOG GRID → ĐÁNH GIÁ ====== */
+/* ====== REVIEWS NÂNG CẤP ====== */
+.reviews-section-new {
+  padding: 90px 0;
+  background: linear-gradient(180deg, #f4f7f2 0%, #e8f0e4 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Vòng trang trí nền */
+.reviews-section-new::before {
+  content: '';
+  position: absolute;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  border: 1px solid rgba(26,60,52,0.06);
+  top: -150px; right: -100px;
+}
+.reviews-section-new::after {
+  content: '';
+  position: absolute;
+  width: 300px; height: 300px;
+  border-radius: 50%;
+  border: 1px solid rgba(26,60,52,0.06);
+  bottom: -80px; left: -80px;
+}
+
+/* HEADER */
+.reviews-header-new {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+.reviews-header-new .eyebrow-rv {
+  font-size: 12px;
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.reviews-header-new h2 {
+  font-size: clamp(1.8rem,3vw,2.8rem);
+  color: var(--text-dark);
+}
+.rating-display {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  padding: 18px 28px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+}
+.rating-display .big-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1;
+}
+.rating-display .stars-row { color: var(--accent); font-size: 18px; }
+.rating-display .count-txt { font-size: 12px; color: #999; margin-top: 4px; }
+
+/* GRID CARDS */
+.review-grid-new {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* CARD */
+.review-card-new {
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: all 0.45s cubic-bezier(0.165,0.84,0.44,1);
+  position: relative;
+  cursor: default;
+}
+.review-card-new:hover {
+  transform: translateY(-14px);
+  box-shadow: 0 25px 55px rgba(26,60,52,0.15);
+}
+
+/* ẢNH PHÍA TRÊN */
+.rv-img-box {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.rv-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.review-card-new:hover .rv-img-box img {
+  transform: scale(1.08);
+}
+
+/* Badge platform trên ảnh */
+.rv-platform {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(26,60,52,0.85);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  padding: 5px 14px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Verified badge */
+.rv-verified {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--accent);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* NỘI DUNG */
+.rv-body {
+  padding: 22px 22px 20px;
+}
+.rv-stars-new {
+  color: var(--accent);
+  font-size: 13px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.rv-stars-new span {
+  color: #999;
+  font-size: 11px;
+  margin-left: 6px;
+}
+
+/* Dấu ngoặc kép trang trí */
+.rv-quote-mark {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  color: var(--green-mist);
+  line-height: 0.6;
+  opacity: 0.6;
+  float: left;
+  margin-right: 6px;
+}
+.rv-text {
+  font-size: 13.5px;
+  color: #555;
+  line-height: 1.75;
+  font-style: italic;
+  margin-bottom: 18px;
+  min-height: 80px;
+}
+
+/* FOOTER CARD: avatar + tên */
+.rv-author-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+.rv-avatar-new {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--green-mist);
+  flex-shrink: 0;
+}
+.rv-avatar-placeholder {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+  border: 2px solid var(--green-mist);
+}
+.rv-name-new {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-dark);
+}
+.rv-meta-new {
+  font-size: 11px;
+  color: #999;
+  margin-top: 2px;
+}
+
+/* Đường kẻ màu dưới card */
+.review-card-new::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%; height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+  transform-origin: left;
+}
+.review-card-new:hover::after { transform: scaleX(1); }
+
+/* TRUST BELT bên dưới */
+.trust-belt { background: #fff; padding: 28px 0; overflow: hidden; }
+.trust-track {
+  display: flex; gap: 16px;
+  width: max-content;
+  animation: marquee 22s linear infinite;
+}
+.trust-chip {
+  display: flex; align-items: center; gap: 8px;
+  flex-shrink: 0; padding: 8px 20px;
+  border: 1px solid #ddd; border-radius: 50px;
+  background: #f9f9f9; font-size: 13px;
+  font-weight: 500; color: #555; white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .review-grid-new { grid-template-columns: 1fr; }
+  .reviews-header-new { flex-direction: column; align-items: flex-start; gap: 20px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== TRUST BELT ====== */
+.trust-belt{background:var(--bg-milk);padding:30px 0;overflow:hidden;}
+.trust-track{display:flex;gap:16px;width:max-content;animation:marquee 22s linear infinite;}
+.trust-chip{
+  display:flex;align-items:center;gap:8px;flex-shrink:0;
+  padding:8px 20px;border:1px solid #ddd;border-radius:50px;
+  background:#fff;font-size:13px;font-weight:500;color:#555;white-space:nowrap;
+}
+
+/* ====== CHATBOT ====== */
+.chat-section{background:var(--primary);padding:80px 0;}
+.chat-layout{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:center;}
+.chat-intro .eyebrow{color:var(--green-sage);font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;display:block;margin-bottom:10px;}
+.chat-intro h2{font-size:clamp(1.8rem,3vw,2.6rem);color:#fff;margin-bottom:16px;}
+.chat-intro p{color:rgba(255,255,255,0.6);font-size:14px;line-height:1.75;margin-bottom:22px;}
+.chat-features{display:flex;flex-direction:column;gap:10px;}
+.chat-feat{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.65);font-size:14px;}
+.chat-feat span{color:#7dcb73;font-weight:700;}
+.chat-window{background:rgba(255,255,255,0.07);border:1px solid rgba(200,221,184,0.2);border-radius:28px;overflow:hidden;}
+.chat-topbar{
+  background:rgba(61,107,42,0.6);padding:14px 20px;
+  display:flex;align-items:center;gap:12px;border-bottom:1px solid rgba(255,255,255,0.1);
+}
+.chat-av{width:38px;height:38px;border-radius:50%;background:var(--green-sage);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.chat-name{font-size:14px;font-weight:700;color:#fff;}
+.chat-status{font-size:12px;color:rgba(255,255,255,0.5);}
+.online-dot{width:7px;height:7px;border-radius:50%;background:#7dcb73;display:inline-block;margin-right:4px;animation:blink 2s infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
+.chat-body{padding:18px;min-height:260px;max-height:300px;overflow-y:auto;display:flex;flex-direction:column;gap:12px;}
+.msg{max-width:84%;}
+.msg-bot{align-self:flex-start;}
+.msg-user{align-self:flex-end;}
+.msg-bubble{padding:10px 14px;border-radius:16px;font-size:13px;line-height:1.6;}
+.msg-bot .msg-bubble{background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.85);border-bottom-left-radius:4px;}
+.msg-user .msg-bubble{background:var(--green-sage);color:#fff;border-bottom-right-radius:4px;}
+.typing{display:flex;gap:5px;padding:10px 14px;}
+.typing span{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,0.4);animation:typeBounce 1.2s ease-in-out infinite;}
+.typing span:nth-child(2){animation-delay:0.2s;}
+.typing span:nth-child(3){animation-delay:0.4s;}
+@keyframes typeBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.chat-quick{display:flex;gap:6px;flex-wrap:wrap;padding:8px 18px 12px;}
+.quick-btn{
+  background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);
+  color:rgba(255,255,255,0.72);font-size:12px;padding:5px 12px;border-radius:50px;
+  cursor:pointer;transition:all 0.3s;font-family:'Montserrat',sans-serif;
+}
+.quick-btn:hover{background:rgba(90,140,62,0.25);border-color:var(--green-sage);color:#fff;}
+.chat-input-bar{display:flex;gap:10px;align-items:center;padding:14px 18px;border-top:1px solid rgba(255,255,255,0.1);}
+.chat-input{
+  flex:1;background:rgba(255,255,255,0.09);border:1px solid rgba(255,255,255,0.15);
+  border-radius:50px;padding:10px 18px;color:rgba(255,255,255,0.9);font-size:13px;
+  outline:none;font-family:'Montserrat',sans-serif;transition:border 0.3s;
+}
+.chat-input::placeholder{color:rgba(255,255,255,0.35);}
+.chat-input:focus{border-color:var(--green-sage);}
+.chat-send{
+  width:40px;height:40px;border-radius:50%;background:var(--green-sage);border:none;
+  color:#fff;font-size:14px;cursor:pointer;transition:all 0.3s;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+}
+.chat-send:hover{background:var(--secondary);transform:scale(1.08);}
+
+/* ====== FOOTER (3 cột, phong cách GiaHuy) ====== */
+footer{background:var(--primary);color:#fff;padding:80px 0 30px;}
+.footer-container{display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:60px;}
+.footer-col h4{color:#fff;font-size:16px;text-transform:uppercase;margin-bottom:28px;font-weight:800;letter-spacing:1.5px;}
+.footer-about p{font-size:14px;margin:6px 0;color:rgba(255,255,255,0.85);}
+.footer-logo-big{font-family:'Playfair Display',serif;font-size:2rem;letter-spacing:4px;color:var(--green-mist);margin-bottom:6px;}
+.footer-logo-sub{font-size:11px;letter-spacing:2px;color:rgba(255,255,255,0.4);text-transform:uppercase;font-style:italic;margin-bottom:16px;}
+.footer-about-desc{font-size:13px;color:rgba(255,255,255,0.55);line-height:1.75;}
+.map-container{width:100%;height:220px;border-radius:20px;overflow:hidden;border:4px solid rgba(255,255,255,0.25);box-shadow:0 15px 35px rgba(0,0,0,0.15);}
+.fb-link{
+  display:inline-block;background:#fff;color:var(--primary);padding:13px 32px;
+  border-radius:50px;text-decoration:none;font-weight:800;text-transform:uppercase;font-size:13px;
+  transition:0.4s ease;box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+.fb-link:hover{background:var(--accent);color:#fff;transform:translateY(-5px);}
+.contact-info p{margin-top:16px;font-size:14px;color:rgba(255,255,255,0.85);font-weight:500;}
+.footer-bottom{text-align:center;border-top:1px solid rgba(255,255,255,0.15);margin-top:55px;padding-top:22px;font-size:12px;color:rgba(255,255,255,0.5);letter-spacing:1px;}
+
+/* ====== RESPONSIVE ====== */
+@media(max-width:1024px){
+  .feature-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-container{grid-template-columns:1fr;}
+  .problem-grid{grid-template-columns:1fr;}
+  .dark-inner{grid-template-columns:1fr;}
+  .offer-grid{grid-template-columns:1fr;}
+  .review-grid{grid-template-columns:1fr;}
+  .chat-layout{grid-template-columns:1fr;}
+}
+@media(max-width:768px){
+  .nav-links{display:none;}
+  .overlay-text h1{font-size:1.8rem;}
+  .stats-grid{gap:0;}
+  .stat-block{padding:12px 22px;}
+  .about-flex{flex-direction:column;gap:30px;}
+  .product-grid{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+
+<!-- THANH CHỮ CHẠY -->
+<div class="top-bar">
+  <div class="marquee-text">
+    🌿 CHÀO MỪNG ĐẾN VỚI HERBARIO – THƯƠNG HIỆU DƯỠNG TÓC THUẦN CHAY SỐ 1 VIỆT NAM 🌿 MIỄN PHÍ VẬN CHUYỂN ĐƠN TỪ 250K 🌿 MUA 5 TẶNG 1 – ÁP DỤNG NGAY HÔM NAY 🌿 ĐƯỢC SỞ Y TẾ CẤP PHÉP LƯU HÀNH 17/11/2023 🌿 GIAO NHANH 2H NỘI THÀNH TP.HCM 🌿 MÃ LYLY – GIẢM THÊM 10% ĐƠN TỪ 99K 🌿
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="container header-wrap">
+    <div class="logo">HER<span>BARIO</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#product" class="active">Giới Thiệu</a></li>
+        <li><a href="#problem">Công Dụng</a></li>
+        <li><a href="#usp">Cam Kết</a></li>
+        <li><a href="#reviews">Đánh Giá</a></li>
+        <li><a href="#chat">Tư Vấn</a></li>
+        <li><a href="#footer">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- BANNER SLIDER 4 SLIDES -->
+<section class="main-banner">
+  <div class="banner-track">
+    <div class="slide s1">
+      <div class="overlay-text">
+        <h1>Phục Hồi Tóc Từ Thiên Nhiên</h1>
+        <p>Di sản thảo mộc Việt Nam kết hợp cùng khoa học mỹ phẩm xanh hiện đại</p>
+        <a href="#product" class="btn-main">Khám Phá Ngay <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="slide s2">
+      <div class="overlay-text">
+        <h1>100% Thuần Chay · Không Paraben</h1>
+        <p>Tinh chất vỏ bưởi & bồ kết – dưỡng chất thẩm thấu sâu, an toàn tuyệt đối</p>
+        <a href="#usp" class="btn-main">Xem Cam Kết <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="slide s3">
+      <div class="overlay-text">
+        <h1>Giảm Rụng & Kích Mọc Tóc</h1>
+        <p>Thấy kết quả rõ rệt chỉ sau 3–4 tuần sử dụng đều đặn</p>
+        <a href="#buy" class="btn-main">Mua Ngay <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="slide s4">
+      <div class="overlay-text">
+        <h1>10.000+ Khách Hàng Tin Dùng</h1>
+        <p>Đánh giá trung bình 4.9 ★ từ hàng nghìn mẹ bỉm sữa & phụ nữ hiện đại</p>
+        <a href="#reviews" class="btn-main">Xem Đánh Giá <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BELT -->
+<div class="stats-belt">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-block"><div class="stat-num">10.000+</div><div class="stat-desc">Khách hàng tin dùng</div></div>
+      <div class="stat-block"><div class="stat-num">100%</div><div class="stat-desc">Thuần chay · không hóa chất</div></div>
+      <div class="stat-block"><div class="stat-num">3 tuần</div><div class="stat-desc">Thấy kết quả rõ rệt</div></div>
+      <div class="stat-block"><div class="stat-num">4.9 ★</div><div class="stat-desc">Điểm đánh giá trung bình</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- GIỚI THIỆU -->
+<section class="section-padding">
+  <div class="container">
+    <div class="about-flex">
+      <div class="about-image" data-aos="fade-right" style="flex:1;">
+        <img src="/img52.jpg" alt="Herbario" style="width:100%;border-radius:25px;box-shadow:0 20px 40px rgba(0,0,0,0.1);">
+      </div>
+      <div class="about-text" data-aos="fade-left" style="flex:1;">
+        <span>Về Chúng Tôi</span>
+        <h2>Chào Mừng Đến Với<br>Herbario</h2>
+        <p>Chúng tôi tự hào là thương hiệu tiên phong trong việc kết hợp thảo mộc bản địa Việt Nam – vỏ bưởi & bồ kết – với công nghệ chiết xuất hiện đại. Sứ mệnh của Herbario là mang đến giải pháp chăm sóc tóc an toàn, hiệu quả và bền vững cho mọi người.</p>
+        <p>Mỗi chai Herbario là sự chắt lọc từ thiên nhiên, được Sở Y Tế TP.HCM cấp phép lưu hành toàn quốc từ tháng 11 năm 2023.</p>
+        <a href="#product" class="btn-outline">Xem Sản Phẩm</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- VẤN ĐỀ TÓC (problem cards 2 col) -->
+<section class="section-padding bg-gray" id="problem">
+  <div class="container">
+    <div class="section-title-block" data-aos="fade-up">
+      <h2>Mái Tóc Bạn Đang Gặp Tình Trạng Nào?</h2>
+      <p>Herbario được tạo ra để giải quyết tận gốc những vấn đề phổ biến nhất</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card" data-aos="fade-up">
+        <div class="prob-img-box">
+          <img src="/imgRung-toc-nhieu.png" alt="Tóc rụng nhiều">
+        </div>
+        <div class="prob-info">
+          <div class="prob-icon-wrap"><i class="fa-solid fa-tint-slash"></i></div>
+          <h3>Tóc Rụng Nhiều</h3>
+          <p>Tóc rụng đáng báo động sau mỗi lần gội hoặc chải đầu mỗi sáng, để lại vệt tóc khắp gối.</p>
+        </div>
+      </div>
+      <div class="problem-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="prob-img-box">
+          <img src="/imgtoc-thua-mong.jpg" alt="Tóc thưa mỏng">
+        </div>
+        <div class="prob-info">
+          <div class="prob-icon-wrap"><i class="fa-solid fa-leaf"></i></div>
+          <h3>Tóc Thưa Mỏng</h3>
+          <p>Thiếu độ dày, lộ rõ vùng da đầu ở đỉnh hoặc dọc đường rẽ ngôi, mất tự tin hàng ngày.</p>
+        </div>
+      </div>
+      <div class="problem-card" data-aos="fade-up">
+        <div class="prob-img-box">
+          <img src="/imgtoc-yeu.jpg" alt="Tóc yếu gãy">
+        </div>
+        <div class="prob-info">
+          <div class="prob-icon-wrap"><i class="fa-solid fa-wind"></i></div>
+          <h3>Tóc Yếu Dễ Gãy</h3>
+          <p>Sợi tóc khô xơ, mất độ đàn hồi – chỉ cần vuốt nhẹ là rụng, chỉ cần buộc là gãy.</p>
+        </div>
+      </div>
+      <div class="problem-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="prob-img-box">
+          <img src="/imgdau-bet.jpg" alt="Da đầu dầu">
+        </div>
+        <div class="prob-info">
+          <div class="prob-icon-wrap"><i class="fa-solid fa-water"></i></div>
+          <h3>Da Đầu Dầu Bí</h3>
+          <p>Nhanh bết dính sau vài giờ gội, bí bách khó chịu, ngứa ngáy thường xuyên.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DARK STATS -->
+<!-- DARK STATS - NÂNG CẤP -->
+<section class="dark-section">
+
+  <!-- NỀN -->
+  <div class="dark-bg"></div>
+  <div class="dark-gradient"></div>
+
+  <!-- VÒNG TRANG TRÍ -->
+  <div class="dark-circle dc1"></div>
+  <div class="dark-circle dc2"></div>
+  <div class="dark-circle dc3"></div>
+
+  <div class="container">
+
+    <!-- TIÊU ĐỀ -->
+    <div class="dark-top">
+      <div style="font-size:12px;color:var(--green-sage);font-weight:700;
+                  letter-spacing:3px;text-transform:uppercase;margin-bottom:14px;"
+           data-aos="fade-up">Sự Thật Về Mái Tóc</div>
+      <h2 data-aos="fade-up">
+        Mái tóc đang thay đổi –<br>
+        <em>theo cách bạn không nhận ra.</em>
+      </h2>
+    </div>
+
+    <!-- 3 STAT CARDS NGANG -->
+    <div class="stat-cards-row">
+
+      <div class="stat-card-big" data-aos="fade-up" data-aos-delay="0">
+        <i class="fa-solid fa-person-half-dress stat-card-icon"></i>
+        <div class="stat-card-num">80%</div>
+        <div class="stat-card-label">Phụ nữ từng trải qua tình trạng<br>rụng tóc nhiều hơn bình thường</div>
+      </div>
+
+      <div class="stat-card-big" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa-solid fa-heart-crack stat-card-icon"></i>
+        <div class="stat-card-num">1/3</div>
+        <div class="stat-card-label">Phụ nữ mất tự tin khi mái tóc<br>không còn như trước đây</div>
+      </div>
+
+      <div class="stat-card-big" data-aos="fade-up" data-aos-delay="200">
+        <i class="fa-solid fa-triangle-exclamation stat-card-icon"></i>
+        <div class="stat-card-num">70%</div>
+        <div class="stat-card-label">Tóc yếu đi từ những tác động nhỏ<br>lặp lại hàng ngày mà không hay</div>
+      </div>
+
+    </div>
+
+    <!-- PHẦN DƯỚI: ẢNH + TRIỆU CHỨNG -->
+    <div class="dark-bottom">
+
+      <!-- CỘT TRÁI: ẢNH KHỐI -->
+      <div class="dark-img-col" data-aos="fade-right">
+
+        <div class="dark-img-main">
+          <div class="dark-img-tag">Rụng tóc</div>
+          <img src="/imgrung-toc-nhieu.jpg" alt="Tóc rụng nhiều">
+          <!-- Thay bằng ảnh thật của bạn -->
+        </div>
+
+        <div class="dark-img-sub">
+          <div class="dark-img-tag">Tóc yếu</div>
+          <img src="/imgtoc-yeu-nhieu.jpg" alt="Tóc yếu gãy">
+          <!-- Thay bằng ảnh thật của bạn -->
+        </div>
+
+      </div>
+
+      <!-- CỘT PHẢI: TRIỆU CHỨNG -->
+      <div class="dark-symptom-col" data-aos="fade-left">
+        <h3>Bạn có đang trải qua...?</h3>
+        <ul class="symptom-list">
+          <li>Tóc rụng nhiều hơn sau mỗi lần gội đầu</li>
+          <li>Tóc rơi trên gối mỗi sáng thức dậy</li>
+          <li>Tóc trở nên khô, xơ, khó vào nếp</li>
+          <li>Buộc tóc thường xuyên hơn để che khuyết điểm</li>
+        </ul>
+        <div class="bridge-quote">
+          <p>"Không phải bạn chăm sóc chưa đủ. Mà là mái tóc đang yếu đi – theo cách bạn không nhận ra. Đã đến lúc cần một giải pháp đúng từ gốc."</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- USP LỚN -->
+<section class="usp-section" id="usp">
+
+  <!-- 4 LỚP ẢNH NỀN (thay src bằng ảnh thật của bạn) --> 
+  <div class="usp-bg active"
+       style="background-image: url('/img9.jpg');"
+       id="bg-0"></div>
+
+  <div class="usp-bg"
+       style="background-image: url('/imganh-nen.jpg');"
+       id="bg-1"></div>
+
+  <div class="usp-bg"
+       style="background-image: url('/img11.jpg');"
+       id="bg-2"></div>
+
+  <div class="usp-bg"
+       style="background-image: url('/img16.jpg');"
+       id="bg-3"></div>
+
+  <!-- LỚP PHỦ TỐI -->
+  <div class="usp-overlay"></div>
+
+  <div class="container">
+    <div style="font-size:12px;color:var(--green-sage);font-weight:700;
+                letter-spacing:3px;text-transform:uppercase;margin-bottom:10px;"
+         data-aos="fade-up">Giá Trị Cốt Lõi</div>
+
+    <h2 style="font-size:clamp(1.8rem,3vw,2.6rem);color:#fff;margin-bottom:8px;"
+        data-aos="fade-up">Những Cam Kết<br>Không Thể Thỏa Hiệp</h2>
+
+    <div class="usp-list" data-aos="fade-up">
+
+      <!-- Thêm data-bg="0/1/2/3" vào mỗi usp-row -->
+      <div class="usp-row" data-bg="0">
+        <span class="usp-n">01</span>
+        <div class="usp-word active">THUẦN CHAY</div>
+        <div class="usp-detail">Kết tinh từ 100% nguyên liệu thực vật bản địa. Tinh chất vỏ bưởi và bồ kết nuôi dưỡng nang tóc phát triển tự nhiên.</div>
+      </div>
+
+      <div class="usp-row" data-bg="1">
+        <span class="usp-n">02</span>
+        <div class="usp-word">KHÔNG PARABEN</div>
+        <div class="usp-detail">Công thức nguyên bản loại bỏ hoàn toàn Paraben và hóa chất gây hại, kiến tạo nền tảng da đầu khỏe mạnh.</div>
+      </div>
+
+      <div class="usp-row" data-bg="2">
+        <span class="usp-n">03</span>
+        <div class="usp-word">CRUELTY FREE</div>
+        <div class="usp-detail">Tôn vinh vẻ đẹp nhân đạo với cam kết tuyệt đối không thử nghiệm trên động vật.</div>
+      </div>
+
+      <div class="usp-row" data-bg="3">
+        <span class="usp-n">04</span>
+        <div class="usp-word">Y TẾ CẤP PHÉP</div>
+        <div class="usp-detail">Chứng nhận đủ điều kiện lưu hành toàn quốc do Sở Y Tế cấp ngày 17/11/2023.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- ƯU ĐIỂM VƯỢT TRỘI (feature grid 4 cột) -->
+<section class="section-padding bg-gray">
+  <div class="container">
+    <div class="section-title-block" data-aos="fade-up">
+      <h2>Ưu Điểm Vượt Trội</h2>
+      <p>Chúng tôi không chỉ bán sản phẩm, chúng tôi trao gửi sự an tâm</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa-solid fa-leaf feature-icon"></i>
+        <h3>100% Thuần Chay</h3>
+        <p>Kết tinh từ nguyên liệu thực vật bản địa, an toàn tuyệt đối.</p>
+      </div>
+      <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+        <i class="fa-solid fa-shield-halved feature-icon"></i>
+        <h3>Không Paraben</h3>
+        <p>Công thức loại bỏ hoàn toàn hoá chất gây hại cho da đầu.</p>
+      </div>
+      <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+        <i class="fa-solid fa-certificate feature-icon"></i>
+        <h3>Y Tế Cấp Phép</h3>
+        <p>Được Sở Y Tế TP.HCM chứng nhận lưu hành toàn quốc 2023.</p>
+      </div>
+      <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+        <i class="fa-solid fa-truck feature-icon"></i>
+        <h3>Giao Nhanh 2H</h3>
+        <p>Giao nhanh nội thành HCM, miễn phí đơn từ 250K.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- MUA NGAY -->
+<section class="offer-section" id="buy">
+  <div class="container">
+    <div class="offer-grid">
+      <!-- THAY THẾ <div class="offer-visual" data-aos="fade-right"> ... </div> BẰNG ĐOẠN NÀY -->
+
+<div class="offer-visual" data-aos="fade-right">
+  <div class="gallery-wrap">
+
+    <!-- CỘT TRÁI: THUMBNAIL -->
+    <div class="thumb-col">
+      <div class="thumb-item active" onclick="changeImg(this, 0)">
+        <img src="/imgsan-pham-1.jpg" alt="Ảnh 1">
+      </div>
+      <div class="thumb-item" onclick="changeImg(this, 1)">
+        <img src="/imgsan-pham-2.jpg" alt="Ảnh 2">
+      </div>
+      <div class="thumb-item" onclick="changeImg(this, 2)">
+        <img src="/imgsan-pham-3.jpg" alt="Ảnh 3">
+      </div>
+    </div>
+
+    <!-- ẢNH LỚN BÊN PHẢI -->
+    <div class="main-img-box">
+      <img id="mainProductImg"
+           src="/imgsan-pham-1.jpg"
+           alt="Herbario 100ml">
+      <div class="floating-badge">
+        <span>Bản nâng cấp</span>
+        <strong>100ml</strong>
+      </div>
+    </div>
+
+  </div>
+</div>
+      <div class="offer-info" data-aos="fade-left">
+        <div class="stars">★★★★★ <span>(4.9/5 từ 10.000+ lượt bán)</span></div>
+        <h2>Nước Dưỡng Tóc Vỏ Bưởi & Bồ Kết Herbario (100ml)</h2>
+        <p class="desc">Bản nâng cấp gấp đôi tinh chất, trang bị vòi xịt phun sương siêu mịn giúp dưỡng chất thẩm thấu sâu vào từng nang tóc. Giải pháp hoàn hảo cho tóc gãy rụng, an toàn cho mẹ bỉm sữa và phụ nữ mang thai.</p>
+        <div class="price-box">
+          <span class="price-current">145.000 VNĐ</span>
+          <span class="price-note">Miễn phí vận chuyển toàn quốc cho đơn từ 2 sản phẩm</span>
+        </div>
+        <ul class="benefits-list">
+          <li><i class="fa-solid fa-check"></i> Giảm gãy rụng rõ rệt chỉ sau 3–4 tuần.</li>
+          <li><i class="fa-solid fa-check"></i> Kích thích mọc tóc con, làm dày đường rẽ ngôi.</li>
+          <li><i class="fa-solid fa-check"></i> Không bết dính, không chứa cồn làm khô da đầu.</li>
+          <li><i class="fa-solid fa-check"></i> An toàn cho mẹ bỉm sữa và phụ nữ mang thai.</li>
+        </ul>
+        <div class="buy-btns">
+          <a href="#" class="btn-buy-main"><i class="fa-solid fa-bag-shopping"></i> Mua Chính Hãng Tại Website</a>
+          <a href="https://shopee.vn" target="_blank" class="btn-buy-shopee"><i class="fa-solid fa-cart-arrow-down"></i> Mua Trên Shopee Mall</a>
+        </div>
+        <div class="guarantee-txt">
+          <i class="fa-solid fa-shield-halved"></i> Cam kết 1 đổi 1 trong 7 ngày nếu lỗi do vận chuyển
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- SẢN PHẨM HOT (kiểu tour card) -->
+<section class="section-padding" id="product">
+  <div class="container">
+    <div class="section-title-block" data-aos="fade-up">
+      <h2>Sản Phẩm Nổi Bật</h2>
+      <p>Click vào sản phẩm để xem chi tiết nổi bật</p>
+    </div>
+    <div class="product-grid" id="productGrid">
+      <div class="product-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="prod-img">
+          <img src="/imgflast-3.jpg" alt="Xịt tóc vỏ bưởi">
+          <div class="prod-badge">116.000đ</div>
+        </div>
+        <div class="prod-detail">
+          <h3>Xịt Vỏ Bưởi & Bồ Kết 50ml</h3>
+          <p>Phiên bản dùng thử, tiện mang theo. Kích thích mọc tóc từ gốc.</p>
+          <a href="#buy" class="link-more">Mua ngay &rarr;</a>
+        </div>
+      </div>
+      <div class="product-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="prod-img">
+          <img src="/imgflast-1.jpg" alt="Xịt tóc 100ml">
+          <div class="prod-badge">145.000đ</div>
+        </div>
+        <div class="prod-detail">
+          <h3>Xịt Vỏ Bưởi & Bồ Kết 100ml</h3>
+          <p>Bản nâng cấp – gấp đôi tinh chất, vòi phun sương siêu mịn.</p>
+          <a href="#buy" class="link-more">Mua ngay &rarr;</a>
+        </div>
+      </div>
+      <div class="product-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="prod-img">
+          <img src="/imgflast-2.jpg" alt="Combo 3 chai">
+          <div class="prod-badge">399.000đ</div>
+        </div>
+        <div class="prod-detail">
+          <h3>Combo 2 Chai 100ml</h3>
+          <p>Tiết kiệm 10%, đủ dùng cho cả gia đình 2–3 tháng liên tục.</p>
+          <a href="#buy" class="link-more">Mua ngay &rarr;</a>
+        </div>
+      </div>
+      <div class="product-card" data-aos="zoom-in" data-aos-delay="400">
+        <div class="prod-img">
+          <img src="/imgqua-tang.jpg" alt="Gift set">
+          <div class="prod-badge">280.000đ</div>
+        </div>
+        <div class="prod-detail">
+          <h3>Quà Tặng</h3>
+          <p>Túi quà tiện lợi, sống "xanh" vì trái đất </p>
+          <a href="#buy" class="link-more">Mua ngay &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ĐÁNH GIÁ (blog grid style) -->
+<!-- ĐÁNH GIÁ NÂNG CẤP -->
+<section class="reviews-section-new" id="reviews">
+  <div class="container" style="position:relative;z-index:2;">
+
+    <!-- HEADER -->
+    <div class="reviews-header-new" data-aos="fade-up">
+      <div>
+        <div class="eyebrow-rv">Người Dùng Nói Gì</div>
+        <h2>Câu Chuyện Thật<br>Từ Khách Hàng</h2>
+      </div>
+      <div class="rating-display">
+        <div class="big-num">4.9</div>
+        <div>
+          <div class="stars-row">★★★★★</div>
+          <div class="count-txt">10.000+ đánh giá</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 REVIEW CARDS -->
+    <div class="review-grid-new">
+
+      <!-- CARD 1 -->
+      <div class="review-card-new" data-aos="fade-up" data-aos-delay="0">
+        <div class="rv-img-box">
+          <img src="/imgreview-1.jpg" alt="Review Lê Hoàng Anh">
+          <!-- Thay bằng ảnh review thật (screenshot Shopee/chụp tóc khách) -->
+          <div class="rv-platform">
+            <i class="fa-solid fa-store" style="font-size:10px;"></i> Shopee Mall
+          </div>
+          <div class="rv-verified">✓ Đã mua hàng</div>
+        </div>
+        <div class="rv-body">
+          <div class="rv-stars-new">
+            ★★★★★ <span>5.0</span>
+          </div>
+          <div class="rv-text">
+            <span class="rv-quote-mark">"</span>
+            Trộm vía tỉ lần! Sinh bé xong tóc rụng từng mảng. Dùng được 3 tuần thấy tóc con mọc lỉa chỉa ở 2 bên trán mừng rớt nước mắt. Mùi bưởi thơm dịu dịu, xịt không bị bết rít da đầu. 10 điểm!
+          </div>
+          <div class="rv-author-row">
+            <div class="rv-avatar-placeholder">LH</div>
+            <div>
+              <div class="rv-name-new">Lê Hoàng Anh</div>
+              <div class="rv-meta-new">Mẹ sau sinh · TP. Hồ Chí Minh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="review-card-new" data-aos="fade-up" data-aos-delay="120">
+        <div class="rv-img-box">
+          <img src="/imgreview-2.jpg" alt="Review Nguyễn Thị Thanh">
+          <!-- Thay bằng ảnh review thật -->
+          <div class="rv-platform">
+            <i class="fa-solid fa-store" style="font-size:10px;"></i> Lazada
+          </div>
+          <div class="rv-verified">✓ Đã mua hàng</div>
+        </div>
+        <div class="rv-body">
+          <div class="rv-stars-new">
+            ★★★★★ <span>5.0</span>
+          </div>
+          <div class="rv-text">
+            <span class="rv-quote-mark">"</span>
+            Chạy deadline thức đêm nhiều tóc rụng nghẹt cả nắp cống. Xịt được nửa chai thấy lúc gội đầu đỡ rụng hẳn. Đỉnh nhất là xịt vô tóc phồng mượt chứ không bị xẹp lép!
+          </div>
+          <div class="rv-author-row">
+            <div class="rv-avatar-placeholder">NT</div>
+            <div>
+              <div class="rv-name-new">Nguyễn Thị Thanh</div>
+              <div class="rv-meta-new">Nhân viên văn phòng · Hà Nội</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="review-card-new" data-aos="fade-up" data-aos-delay="240">
+        <div class="rv-img-box">
+          <img src="/imgreview-3.jpg" alt="Review Hoàng Yến">
+          <!-- Thay bằng ảnh review thật -->
+          <div class="rv-platform">
+            <i class="fa-brands fa-tiktok" style="font-size:10px;"></i> TikTok
+          </div>
+          <div class="rv-verified">✓ Đã mua hàng</div>
+        </div>
+        <div class="rv-body">
+          <div class="rv-stars-new">
+            ★★★★★ <span>5.0</span>
+          </div>
+          <div class="rv-text">
+            <span class="rv-quote-mark">"</span>
+            Tìm mãi mới được loại xịt dưỡng tóc thuần chay 100% không chứa paraben. Mùi hương vỏ bưởi rất đặc trưng giống mẹ hay nấu ngày xưa. An tâm xịt không lo kích ứng da đầu.
+          </div>
+          <div class="rv-author-row">
+            <div class="rv-avatar-placeholder">HY</div>
+            <div>
+              <div class="rv-name-new">Hoàng Yến</div>
+              <div class="rv-meta-new">Blogger Sống Xanh · Đà Nẵng</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BELT -->
+<div class="trust-belt">
+  <div class="trust-track">
+    <div class="trust-chip">🌱 100% Thuần Chay</div>
+    <div class="trust-chip">🚫 Không Paraben</div>
+    <div class="trust-chip">🐾 Cruelty Free</div>
+    <div class="trust-chip">📋 Sở Y Tế 2023</div>
+    <div class="trust-chip">🇻🇳 Made In Vietnam</div>
+    <div class="trust-chip">💚 Organic Certified</div>
+    <div class="trust-chip">✅ Không Hóa Chất Độc Hại</div>
+    <div class="trust-chip">🏆 Top 1 Được Yêu Thích</div>
+    <div class="trust-chip">🌱 100% Thuần Chay</div>
+    <div class="trust-chip">🚫 Không Paraben</div>
+    <div class="trust-chip">🐾 Cruelty Free</div>
+    <div class="trust-chip">📋 Sở Y Tế 2023</div>
+    <div class="trust-chip">🇻🇳 Made In Vietnam</div>
+    <div class="trust-chip">💚 Organic Certified</div>
+    <div class="trust-chip">✅ Không Hóa Chất Độc Hại</div>
+    <div class="trust-chip">🏆 Top 1 Được Yêu Thích</div>
+  </div>
+</div>
+
+<!-- CHATBOT TƯ VẤN -->
+<section class="chat-section" id="chat">
+  <div class="container">
+    <div class="chat-layout">
+      <div class="chat-intro" data-aos="fade-right">
+        <span class="eyebrow">Hỗ Trợ 24/7</span>
+        <h2>Trợ Lý Tư Vấn<br>Tóc Herbario</h2>
+        <p>Trò chuyện cùng Trợ lý Herbario – Chuyên viên được đào tạo độc quyền để lắng nghe và phục hồi mái tóc của bạn. Hoạt động 24/7, phản hồi tức thì.</p>
+        <div class="chat-features">
+          <div class="chat-feat"><span>✓</span> Phân tích tình trạng tóc cá nhân</div>
+          <div class="chat-feat"><span>✓</span> Gợi ý liệu trình chăm sóc phù hợp</div>
+          <div class="chat-feat"><span>✓</span> Giải đáp mọi thắc mắc về sản phẩm</div>
+          <div class="chat-feat"><span>✓</span> Tư vấn combo tiết kiệm nhất cho bạn</div>
+        </div>
+      </div>
+      <div data-aos="fade-left">
+        <div class="chat-window">
+          <div class="chat-topbar">
+            <div class="chat-av">🌿</div>
+            <div>
+              <div class="chat-name">Trợ Lý Herbario</div>
+              <div class="chat-status"><span class="online-dot"></span>Đang trực tuyến</div>
+            </div>
+          </div>
+          <div class="chat-body" id="chatBody">
+            <div class="msg msg-bot"><div class="msg-bubble">Chào bạn! Mình là trợ lý Herbario 🌿 Bạn đang gặp vấn đề rụng tóc hay muốn tìm hiểu về sản phẩm vỏ bưởi & bồ kết ạ?</div></div>
+          </div>
+          <div class="chat-quick">
+            <button class="quick-btn" onclick="sendQuick('Tóc tôi rụng nhiều quá!')">Tóc rụng nhiều</button>
+            <button class="quick-btn" onclick="sendQuick('Thành phần sản phẩm gồm gì?')">Thành phần</button>
+            <button class="quick-btn" onclick="sendQuick('Giá và khuyến mãi hiện tại?')">Giá & ưu đãi</button>
+            <button class="quick-btn" onclick="sendQuick('Xịt xong có bị bết không?')">Có bết không?</button>
+          </div>
+          <div class="chat-input-bar">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Nhập câu hỏi của bạn...">
+            <button class="chat-send" onclick="sendMsg()"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (3 cột phong cách GiaHuy) -->
+<footer id="footer">
+  <div class="container footer-container">
+    <div class="footer-col footer-about">
+      <div class="footer-logo-big">HERBARIO</div>
+      <div class="footer-logo-sub">Liệu pháp Thuần chay · Thảo dược bản địa</div>
+      <p class="footer-about-desc">Thương hiệu mỹ phẩm Việt Nam lan tỏa cảm hứng sống xanh. Sản phẩm được Sở Y Tế TP.HCM cấp phép lưu hành toàn quốc từ năm 2023.</p>
+      <div style="margin-top:20px;">
+        <p class="footer-about" style="font-size:14px;color:rgba(255,255,255,0.85);">Hotline: <strong>0903.789.646</strong></p>
+        <p class="footer-about" style="font-size:14px;color:rgba(255,255,255,0.85);">Email: vnherbario@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Vị Trí Cửa Hàng</h4>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4584851739524!2d106.69808687480505!3d10.762622089393337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f38f9ed887b%3A0x14aded5703768989!2zVHDhuqFuZyBIw7MgQ2jDrSBNaW5oIENpdHkgSGFsbA!5e0!3m2!1svi!2s!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+	
+    <div class="footer-col">
+      <h4>Kết Nối Với Chúng Tôi</h4>
+      <p style="margin-bottom:22px;font-size:14px;color:rgba(255,255,255,0.75);line-height:1.7;">Mỗi sợi tóc là một câu chuyện. Hãy để Herbario đồng hành cùng bạn trên hành trình phục hồi và yêu thương mái tóc!</p>
+      <a href="https://facebook.com" target="_blank" class="fb-link">Theo dõi Facebook</a>
+      <div class="contact-info">
+        <p>Hotline: 0903.789.646</p>
+        <p>7/50A Đường 182, P. Tăng Nhơn Phú, TP.HCM</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p><b>© HERBARIO – CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ LIDO · ĐƯỢC SỞ Y TẾ CẤP PHÉP 17/11/2023</b></p>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div style="position:fixed;right:20px;bottom:70px;display:flex;flex-direction:column;gap:12px;z-index:999;">
+  <a href="https://zalo.me/0903789646" target="_blank" style="width:50px;height:50px;border-radius:50%;background:#0068ff;color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,0.2);">Zalo</a>
+  <a href="tel:0903789646" style="width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,#1A3C34,#3D6B2A);color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,0.2);"><i class="fa-solid fa-phone"></i></a>
+</div>
+<button id="backToTop" onclick="scrollTo({top:0,behavior:'smooth'})" style="position:fixed;right:20px;bottom:14px;width:44px;height:44px;background:var(--accent);color:#fff;border:none;border-radius:50%;display:none;align-items:center;justify-content:center;cursor:pointer;z-index:999;font-size:14px;box-shadow:0 4px 16px rgba(212,175,55,0.4);transition:all 0.3s;">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({duration:1000,once:false,mirror:true,offset:80});
+
+// Back to top
+const btt=document.getElementById('backToTop');
+window.addEventListener('scroll',()=>{
+  btt.style.display=window.scrollY>400?'flex':'none';
+});
+
+// Product card hover (kiểu tour card)
+const cards=document.querySelectorAll('.product-card');
+const grid=document.getElementById('productGrid');
+cards.forEach(c=>{
+  c.addEventListener('click',()=>{
+    if(c.classList.contains('active')){c.classList.remove('active');grid.classList.remove('has-active');}
+    else{cards.forEach(x=>x.classList.remove('active'));c.classList.add('active');grid.classList.add('has-active');}
+  });
+});
+window.addEventListener('click',e=>{
+  if(!grid.contains(e.target)){cards.forEach(c=>c.classList.remove('active'));grid.classList.remove('has-active');}
+});
+
+// USP hover
+document.querySelectorAll('.usp-row').forEach(row=>{
+  row.addEventListener('mouseenter',()=>{
+    document.querySelectorAll('.usp-word').forEach(w=>w.classList.remove('active'));
+    row.querySelector('.usp-word').classList.add('active');
+  });
+});
+
+// Chatbot
+const replies={
+  'rụng':'Rụng tóc thường do thiếu dưỡng chất hoặc nang tóc yếu. Vỏ bưởi trong Herbario giúp kích thích nang tóc và tăng tuần hoàn máu. Dùng 1–2 lần/ngày và massage 2–3 phút sau mỗi lần xịt nhé! 🌿',
+  'thành phần':'Herbario gồm: Tinh dầu Vỏ Bưởi (kích thích mọc tóc), Chiết xuất Bồ Kết (làm sạch, kháng khuẩn), Betaine (giữ ẩm không bết), Vitamin B5 (phục hồi sợi tóc). 100% thuần chay, không Paraben! ✨',
+  'giá':'Xịt dưỡng tóc 100ml chỉ 145.000đ, phiên bản 50ml 116.000đ. Dùng mã LYLY giảm thêm 10%. Mua 5 tặng 1. Free ship đơn từ 250k! 🛒',
+  'bết':'Herbario chứa Betaine giúp tóc hấp thụ dưỡng chất mà không bết dính. Bí quyết: xịt khi tóc 80% khô, giữ cách 10–15cm và massage nhẹ nhàng 💧',
+  'default':'Cảm ơn bạn quan tâm đến Herbario! Bạn có thể hỏi về: thành phần, cách dùng, giá cả, tình trạng tóc, hoặc combo ưu đãi nhé 🌿'
+};
+function sendQuick(t){document.getElementById('chatInput').value=t;sendMsg();}
+function sendMsg(){
+  const inp=document.getElementById('chatInput');
+  const body=document.getElementById('chatBody');
+  const txt=inp.value.trim();if(!txt)return;
+  body.innerHTML+=`<div class="msg msg-user"><div class="msg-bubble">${txt}</div></div>`;
+  inp.value='';
+  body.innerHTML+=`<div class="msg msg-bot" id="typing"><div class="msg-bubble"><div class="typing"><span></span><span></span><span></span></div></div></div>`;
+  body.scrollTop=body.scrollHeight;
+  setTimeout(()=>{
+    const lo=txt.toLowerCase();
+    let rep=replies.default;
+    if(lo.includes('rụng')||lo.includes('rung'))rep=replies['rụng'];
+    else if(lo.includes('thành phần')||lo.includes('nguyên liệu'))rep=replies['thành phần'];
+    else if(lo.includes('giá')||lo.includes('mua')||lo.includes('tiền'))rep=replies['giá'];
+    else if(lo.includes('bết')||lo.includes('dính'))rep=replies['bết'];
+    const t=document.getElementById('typing');if(t)t.remove();
+    body.innerHTML+=`<div class="msg msg-bot"><div class="msg-bubble">${rep}</div></div>`;
+    body.scrollTop=body.scrollHeight;
+  },1300);
+}
+document.getElementById('chatInput').addEventListener('keypress',e=>{if(e.key==='Enter')sendMsg();});
+
+// ====== GALLERY ẢNH SẢN PHẨM ======
+const productImages = [
+  '/imgsan-pham-1.jpg',
+  '/imgsan-pham-2.jpg',
+  '/imgsan-pham-3.jpg'
+];
+
+function changeImg(thumbEl, idx) {
+  // Bỏ active tất cả thumb
+  document.querySelectorAll('.thumb-item').forEach(t => t.classList.remove('active'));
+  thumbEl.classList.add('active');
+
+  // Fade out → đổi src → fade in
+  const mainImg = document.getElementById('mainProductImg');
+  mainImg.classList.add('switching');
+
+  setTimeout(() => {
+    mainImg.src = productImages[idx];
+    mainImg.onload = () => mainImg.classList.remove('switching');
+    // Fallback nếu ảnh đã cache
+    if (mainImg.complete) mainImg.classList.remove('switching');
+  }, 300);
+}
+// ====== USP BACKGROUND ĐỔI THEO HOVER ======
+document.querySelectorAll('.usp-row').forEach(row => {
+  row.addEventListener('mouseenter', () => {
+    const idx = row.getAttribute('data-bg');
+
+    // Tắt tất cả bg
+    document.querySelectorAll('.usp-bg').forEach(bg => bg.classList.remove('active'));
+
+    // Bật đúng bg
+    document.getElementById('bg-' + idx).classList.add('active');
+
+    // active chữ
+    document.querySelectorAll('.usp-word').forEach(w => w.classList.remove('active'));
+    row.querySelector('.usp-word').classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
