@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbario - Nước Dưỡng Tóc Vỏ Bưởi & Bồ Kết Thuần Chay</title>
+    
+    <meta name="description" content="Giải pháp giảm rụng tóc thuần chay 100% từ Vỏ Bưởi và Bồ Kết. Mỹ phẩm thuần chay Herbario chính hãng.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#" class="logo-link">
+                <img src="images/1.jpg" alt="Herbario Logo" class="brand-logo">
+            </a>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link">Giới thiệu</a></li>
+                    <li class="nav-item"><a href="#story" class="nav-link">Câu chuyện</a></li>
+                    <li class="nav-item"><a href="#ingredients" class="nav-link">Thành phần</a></li>
+                    <li class="nav-item"><a href="#product" class="nav-link">Sản phẩm</a></li>
+                    <li class="nav-item"><a href="#reviews" class="nav-link">Trải nghiệm</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link">Bài viết</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#product" class="btn-primary-nav">ĐẶT HÀNG NGAY</a>
+                <button class="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-section" id="hero">
+            
+            <div class="hero-slider">
+                <div class="slide-item active" style="background-image: url('images/2.jpg');"></div>
+                <div class="slide-item" style="background-image: url('images/hero-background.jpg');"></div>
+                <div class="slide-item" style="background-image: url('images/doi-vo-chai-175.jpg');"></div>
+                
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="container hero-container">
+                <div class="hero-content">
+                    
+                    <div class="hero-text-box">
+                        <h1 class="hero-title">
+                            <span class="line-wrapper"><span class="reveal-text"> </span></span>
+                            <span class="line-wrapper"><span class="reveal-text"> </span></span>
+                            <span class="line-wrapper"><span class="reveal-text highlight-italic"> </span></span>
+                        </h1>
+                        
+                        <div class="hero-desc-box">
+                            <p class="hero-subtitle fade-in-text">
+                                 
+                            </p>
+                        </div>
+
+                        <div class="hero-buttons fade-in-text">
+                            <a href="#product" class="btn-primary-hero">KHÁM PHÁ GIẢI PHÁP</a>
+                            <a href="#story" class="btn-outline-hero">NGHE CÂU CHUYỆN</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="scroll-indicator fade-in-text">
+                <div class="mouse-icon">
+                    <div class="wheel"></div>
+                </div>
+                <span class="scroll-text">Cuộn xuống</span>
+            </div>
+
+        </section>
+
+        <section class="story-section" id="story">
+            <div class="container story-container">
+                
+                <div class="story-content">
+                    <div class="story-tagline story-anim">NGƯỜI BẠN ĐỒNG HÀNH</div>
+                    <h2 class="story-heading story-anim">Khơi Nguồn Vẻ Đẹp Nguyên Bản</h2>
+                    
+                    <div class="trust-badge story-anim">
+                        <div class="stars-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="trust-text">Hơn 10.000+ người đã tìm lại thanh xuân mái tóc</span>
+                    </div>
+                    
+                    <p class="story-desc story-anim">
+                        Sự kết hợp hoàn hảo giữa tinh dầu vỏ bưởi nguyên chất ép lạnh và chiết xuất bồ kết cô đặc. Herbario mang đến giải pháp thuần chay, không paraben, không sulfate, thẩm thấu sâu giúp nuôi dưỡng nang tóc đang tổn thương, mang lại mái tóc chắc khỏe từ gốc.
+                    </p>
+                    
+                    <ul class="story-features story-anim">
+                        <li><i class="fa-solid fa-leaf"></i> 100% Thuần chay (Vegan) - Yêu thương muôn loài</li>
+                        <li><i class="fa-solid fa-shield-halved"></i> Không chứa hóa chất bào mòn da đầu</li>
+                        <li><i class="fa-solid fa-droplet"></i> Thẩm thấu nhanh trong 3 giây, không gây bết rít</li>
+                    </ul>
+                    
+                    <div class="contact-box story-anim">
+                        <strong>HỖ TRỢ TƯ VẤN CHUYÊN SÂU:</strong>
+                        <p><i class="fa-solid fa-phone-volume"></i> Hotline/Zalo: 0903.789.646</p>
+                        <p><i class="fa-solid fa-envelope-open-text"></i> Email: vnherbario@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="story-video-col">
+                    <div class="video-thumbnail-wrapper" id="open-video-btn">
+                        <img src="images/5.jpg" alt="Câu chuyện Herbario" class="video-cover-img">
+                        <div class="play-button-center">
+                            <i class="fa-solid fa-play"></i>
+                            <div class="ripple-wave"></div>
+                            <div class="ripple-wave wave-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="video-modal-container" id="videoModal">
+                <div class="modal-dark-overlay" id="close-modal-overlay"></div>
+                <div class="modal-video-content">
+                    <button class="close-video-btn" id="close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+                    <div class="iframe-wrapper">
+                        <iframe id="youtube-iframe" width="100%" height="100%" src="" title="Herbario Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="problem-section" id="problem">
+            <div class="container problem-container">
+                
+                <div class="problem-content-col">
+                    <h2 class="problem-heading problem-reveal">
+                        Mái tóc đang thay đổi <br>
+                        <span class="heading-highlight">theo cách bạn không nhận ra.</span>
+                    </h2>
+                    
+                    <p class="problem-subheading problem-reveal">
+                        "Bạn sẽ không nhận ra sự mất mát trong một ngày. Nhưng mỗi sáng thức dậy, mỗi lần chải tóc, mái tóc mỏng đi một chút. Đó là lúc nang tóc đang âm thầm kêu cứu."
+                    </p>
+                    
+                    <div class="stats-grid problem-reveal">
+                        <div class="stat-box">
+                            <div class="stat-number">
+                                <span class="counter-value" data-target="80">0</span><span class="stat-percent">%</span>
+                            </div>
+                            <p class="stat-label">Phụ nữ Việt Nam từng trải qua tình trạng rụng tóc nghiêm trọng sau tuổi 25 hoặc sau sinh.</p>
+                        </div>
+                        
+                        <div class="stat-box">
+                            <div class="stat-number">
+                                <span class="counter-value" data-target="33">0</span><span class="stat-percent">%</span>
+                            </div>
+                            <p class="stat-label">Cảm thấy mất đi sự tự tin và ngại giao tiếp khi mái tóc không còn bồng bềnh như trước.</p>
+                        </div>
+                        
+                        <div class="stat-box">
+                            <div class="stat-number">
+                                <span class="counter-value" data-target="70">0</span><span class="stat-percent">%</span>
+                            </div>
+                            <p class="stat-label">Tóc yếu đi do sử dụng các sản phẩm làm sạch chứa nhiều hóa chất tẩy rửa mạnh (Sulfate).</p>
+                        </div>
+                    </div>
+
+                    <div class="symptom-box problem-reveal">
+                        <h3>Dấu hiệu nang tóc đang suy yếu:</h3>
+                        <ul class="symptom-list">
+                            <li><i class="fa-solid fa-circle-exclamation"></i> Tóc rụng nhiều hơn 100 sợi mỗi ngày, đặc biệt lúc gội đầu.</li>
+                            <li><i class="fa-solid fa-circle-exclamation"></i> Đường rẽ ngôi ngày càng rộng, lộ rõ da đầu.</li>
+                            <li><i class="fa-solid fa-circle-exclamation"></i> Tóc con mọc lên rất ít, sợi tóc mới mọc mảnh và dễ đứt.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="problem-visual-col">
+                    <div class="sticky-visual-wrapper">
+                        
+                        <div class="reveal-image-container">
+                            <img src="images/6.jpg" alt="Vấn đề rụng tóc ở phụ nữ" class="problem-img">
+                            <div class="reveal-curtain"></div>
+                        </div>
+
+                        <div class="problem-quote-box">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p>"Không phải bạn chăm sóc chưa đủ, mà là bạn chưa chọn đúng giải pháp thuần khiết mà mái tóc thực sự cần."</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="solution-section" id="solution">
+            
+            <div class="scroll-pin-track">
+                
+                <div class="sticky-solution-frame">
+                    
+                    <div class="solution-intro">
+                        <div class="container">
+                            <h2 class="solution-title">Giải Pháp Từ Tinh Túy Bản Địa</h2>
+                            <p class="solution-desc">Hành trình đánh thức nang tóc bằng sức mạnh của tự nhiên. Không hóa chất độc hại, không tổn hại biểu bì. Hãy cuộn chuột để khám phá.</p>
+                        </div>
+                    </div>
+
+                    <div class="ingredient-stage">
+                        
+                        <div class="ingredient-card card-left">
+                            <div class="ingredient-img-wrapper">
+                                <img src="images/8.jpg" alt="Tinh dầu vỏ bưởi nguyên chất" class="ingredient-img">
+                            </div>
+                            <div class="ingredient-info">
+                                <h3>Tinh Dầu Vỏ Bưởi Ép Lạnh</h3>
+                                <p>Sở hữu hàm lượng Limonene cực cao, dễ dàng thẩm thấu qua da đầu, kích thích mạnh mẽ vi tuần hoàn máu để đẩy nhanh quá trình nuôi dưỡng mầm tóc mới.</p>
+                            </div>
+                        </div>
+
+                        <div class="center-bottle-wrapper">
+                            <img src="images/7.jpg" alt="Nước dưỡng tóc Herbario 100ml" class="bottle-zoom-target">
+                            
+                            <div class="vitamin-tag">
+                                <strong>+ Tăng cường Vitamin B5 (Panthenol)</strong><br>
+                                Cấp ẩm tức thì, tạo lớp màng bảo vệ sợi tóc khỏi nhiệt độ máy sấy.
+                            </div>
+                        </div>
+
+                        <div class="ingredient-card card-right">
+                            <div class="ingredient-img-wrapper">
+                                <img src="images/9.jpg" alt="Chiết xuất bồ kết cô đặc" class="ingredient-img">
+                            </div>
+                            <div class="ingredient-info">
+                                <h3>Chiết Xuất Bồ Kết Cô Đặc</h3>
+                                <p>Chứa nguồn Saponin dồi dào - "chất tẩy rửa" êm ái từ thiên nhiên. Giúp hòa tan bã nhờn, làm sạch nang tóc mà không tước đi lớp dầu tự nhiên bảo vệ da đầu.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="usp-section" id="usp">
+            <div class="container">
+                
+                <div class="usp-header">
+                    <h2 class="usp-main-title">Lời Cam Kết Tinh Túy Từ Đất Mẹ</h2>
+                    <p class="usp-subtitle">Sự minh bạch làm nên đẳng cấp. Herbario không chỉ chăm sóc mái tóc, chúng tôi tôn trọng hệ sinh thái và sức khỏe của chính bạn.</p>
+                </div>
+
+                <div class="usp-container">
+                    
+                    <div class="usp-text-col">
+                        
+                        <div class="usp-tab-item active" data-tab="1">
+                            <div class="usp-icon">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                            <div class="usp-info">
+                                <h3>100% Thuần Chay (Vegan)</h3>
+                                <p>Tôn trọng sự sống tự nhiên. Toàn bộ dưỡng chất cấu thành nên sản phẩm hoàn toàn được chiết xuất từ thực vật bản địa, tuyệt đối không chứa bất kỳ thành phần nào có nguồn gốc từ động vật.</p>
+                            </div>
+                        </div>
+
+                        <div class="usp-tab-item" data-tab="2">
+                            <div class="usp-icon">
+                                <i class="fa-solid fa-shield-cat"></i>
+                            </div>
+                            <div class="usp-info">
+                                <h3>Không Paraben & Sulfate</h3>
+                                <p>Loại bỏ hoàn toàn các chất bảo quản hóa học và chất tẩy rửa mạnh gây bào mòn. Sản phẩm dịu nhẹ tuyệt đối, bảo vệ hàng rào độ ẩm tự nhiên của da đầu, an toàn cho cả mẹ bầu và mẹ bỉm sữa.</p>
+                            </div>
+                        </div>
+
+                        <div class="usp-tab-item" data-tab="3">
+                            <div class="usp-icon">
+                                <i class="fa-solid fa-paw"></i>
+                            </div>
+                            <div class="usp-info">
+                                <h3>Không Thử Nghiệm Trên Động Vật</h3>
+                                <p>Vẻ đẹp thực sự luôn đi liền với lòng nhân đạo. Mọi quy trình kiểm định của Herbario đều được thực hiện trong phòng thí nghiệm hiện đại, cam kết tiêu chuẩn Cruelty-Free quốc tế.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="usp-image-col">
+                        <div class="usp-image-wrapper">
+                            <img src="images/10.jpg" alt="100% Thuần chay" class="usp-img active" data-img="1">
+                            
+                            <img src="images/11.jpg" alt="Không Paraben" class="usp-img" data-img="2">
+                            
+                            <img src="images/12.jpg" alt="Cruelty Free" class="usp-img" data-img="3">
+                            
+                            <div class="usp-image-frame"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="review-section" id="reviews">
+            <div class="container">
+                
+                <div class="review-header review-anim">
+                    <h2 class="review-main-title">Đừng Chỉ Nghe Chúng Tôi Nói</h2>
+                    <p class="review-subtitle">Hàng ngàn mái tóc đã được hồi sinh. Dưới đây là những trải nghiệm chân thực nhất từ cộng đồng yêu sống xanh sau 4 tuần sử dụng Herbario.</p>
+                </div>
+
+                <div class="review-slider-wrapper review-anim">
+                    
+                    <button class="slider-nav-btn prev-btn" id="review-prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="review-track" id="review-track">
+                        
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-quote">"Mình dùng chai xịt bưởi Herbario này đến chai thứ 2 rồi. Ưu điểm lớn nhất là vòi xịt phun sương rất đều, không gây bết dính. Sau hơn 1 tháng xịt mỗi tối thì tóc con ở đường ngôi mọc lên tua tủa. Rất bất ngờ!"</p>
+                            <div class="review-customer">
+                                <img src="images/13.jpg" alt="Khách hàng Thu Phương" class="customer-avatar">
+                                <div class="customer-info">
+                                    <h4>THU PHƯƠNG</h4>
+                                    <span>Nhân viên văn phòng</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-quote">"Sau khi sinh bé, tóc mình rụng trắng sàn nhà. Mình kiên trì xịt dưỡng Herbario mỗi tối. Trộm vía sau 1 tháng tóc con mọc lởm chởm như cỏ non luôn. Tóc chắc khỏe hơn, không đứt gãy. Chị em nên thử nhé!"</p>
+                            <div class="review-customer">
+                                <img src="images/14.jpg" alt="Khách hàng Minh Anh" class="customer-avatar">
+                                <div class="customer-info">
+                                    <h4>MINH ANH</h4>
+                                    <span>Mẹ bỉm sữa</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-quote">"Ấn tượng đầu tiên là shop tư vấn nhiệt tình. Giao hàng siêu nhanh, đóng gói chắc chắn, có giấy lót chống sốc bằng giấy tái chế bảo vệ môi trường. Mở ra thơm nức mùi bồ kết. Hài lòng với dịch vụ!"</p>
+                            <div class="review-customer">
+                                <img src="images/15.jpg" alt="Khách hàng Tùng Lê" class="customer-avatar">
+                                <div class="customer-info">
+                                    <h4>TÙNG LÊ</h4>
+                                    <span>Quản lý dự án</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-quote">"Thích nhất là xịt xong tóc vẫn giữ được độ tơi bồng bềnh, không hề bị xẹp hay đổ dầu. Mình xịt sau khi sấy tóc khô 80%, da đầu mát lạnh sảng khoái. Sản phẩm thuần chay chất lượng cho người bận rộn."</p>
+                            <div class="review-customer">
+                                <img src="images/16.jpg" alt="Khách hàng Minh Tú" class="customer-avatar">
+                                <div class="customer-info">
+                                    <h4>MINH TÚ</h4>
+                                    <span>Sinh viên</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-quote">"Tìm mãi mới được loại xịt dưỡng 100% thuần chay không paraben. Mùi hương vỏ bưởi giống hệt mùi nước gội đầu mẹ nấu ngày xưa. Xịt lên rất an tâm vì lành tính, không lo kích ứng da đầu nhạy cảm."</p>
+                            <div class="review-customer">
+                                <img src="images/17.jpg" alt="Khách hàng Hoàng Yến" class="customer-avatar">
+                                <div class="customer-info">
+                                    <h4>HOÀNG YẾN</h4>
+                                    <span>Blogger Sống Xanh</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <button class="slider-nav-btn next-btn" id="review-next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="offer-section" id="product">
+            <div class="container offer-container">
+                
+                <div class="offer-visual-col offer-anim">
+                    <div class="product-showcase">
+                        <div class="product-badge">
+                            <span>BẢN NÂNG CẤP</span>
+                            <strong>100ml</strong>
+                        </div>
+                        <img src="images/18.jpg" alt="Nước xịt dưỡng tóc Vỏ Bưởi và Bồ Kết Herbario 100ml" class="product-hero-img">
+                        <div class="product-backdrop-circle"></div>
+                    </div>
+                </div>
+
+                <div class="offer-info-col">
+                    <div class="offer-rating offer-anim">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <span>(4.9/5 từ 10.000+ lượt bán)</span>
+                    </div>
+                    
+                    <h2 class="offer-title offer-anim">Nước Dưỡng Tóc Vỏ Bưởi & Bồ Kết Herbario (100ml)</h2>
+                    
+                    <p class="offer-desc offer-anim">
+                        Bản nâng cấp gấp đôi tinh chất, trang bị vòi xịt phun sương siêu mịn giúp dưỡng chất thẩm thấu sâu vào từng nang tóc. Giải pháp hoàn hảo cho tóc gãy rụng, an toàn cho mẹ bỉm sữa.
+                    </p>
+                    
+                    <div class="offer-pricing offer-anim">
+                        <span class="price-current">145.000 VNĐ</span>
+                        <span class="price-tagline">Miễn phí vận chuyển toàn quốc cho đơn từ 2 sản phẩm</span>
+                    </div>
+
+                    <ul class="offer-benefits offer-anim">
+                        <li><i class="fa-solid fa-check"></i> Giảm gãy rụng rõ rệt chỉ sau 3-4 tuần.</li>
+                        <li><i class="fa-solid fa-check"></i> Kích thích mọc tóc con, làm dày đường rẽ ngôi.</li>
+                        <li><i class="fa-solid fa-check"></i> Không bết dính, không chứa cồn làm khô da đầu.</li>
+                    </ul>
+
+                    <div class="offer-action-btns offer-anim">
+                        <a href="#order-form" class="btn-buy-website">
+                            <i class="fa-solid fa-bag-shopping"></i> MUA CHÍNH HÃNG TẠI WEBSITE
+                        </a>
+                        
+                        <a href="https://shopee.vn" target="_blank" class="btn-buy-shopee">
+                            <i class="fa-solid fa-cart-arrow-down"></i> MUA TRÊN SHOPEE MALL
+                        </a>
+                    </div>
+                    
+                    <div class="offer-guarantee offer-anim">
+                        <i class="fa-solid fa-shield-halved"></i> Cam kết 1 đổi 1 trong 7 ngày nếu lỗi do vận chuyển.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="blog-section" id="blog">
+            <div class="container">
+                
+                <div class="blog-header blog-anim">
+                    <h2 class="blog-main-title">Góc Kiến Thức Thuần Chay</h2>
+                    <p class="blog-subtitle">Cùng Herbario khám phá bí quyết chăm sóc mái tóc khỏe đẹp từ những nguyên liệu tự nhiên quen thuộc nhất của bản địa Việt Nam.</p>
+                </div>
+
+                <div class="blog-grid">
+                    
+                    <article class="blog-card blog-anim">
+                        <a href="#" class="blog-link-wrapper">
+                            <div class="blog-thumbnail">
+                                <div class="blog-category">Sống Xanh</div>
+                                <img src="images/19.jpg" alt="Vì sao nên chọn mỹ phẩm thuần chay" class="blog-img">
+                            </div>
+                            <div class="blog-content">
+                                <span class="blog-date"><i class="fa-regular fa-calendar"></i> 12 Tháng 5, 2026</span>
+                                <h3 class="blog-title">Vì sao nên chọn dưỡng tóc Thuần Chay giữa "ma trận" hóa chất?</h3>
+                                <p class="blog-excerpt">Khám phá lý do hàng triệu phụ nữ đang chuyển hướng sang các sản phẩm làm đẹp thuần tự nhiên để bảo vệ sức khỏe và môi trường...</p>
+                                <span class="blog-readmore">Đọc tiếp <i class="fa-solid fa-arrow-right-long"></i></span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card blog-anim">
+                        <a href="#" class="blog-link-wrapper">
+                            <div class="blog-thumbnail">
+                                <div class="blog-category">Thành Phần</div>
+                                <img src="images/20.jpg" alt="Tác dụng của Bồ Kết" class="blog-img">
+                            </div>
+                            <div class="blog-content">
+                                <span class="blog-date"><i class="fa-regular fa-calendar"></i> 08 Tháng 5, 2026</span>
+                                <h3 class="blog-title">Saponin trong Bồ Kết: Bí mật cho mái tóc tơi phồng của phụ nữ xưa.</h3>
+                                <p class="blog-excerpt">Chất tẩy rửa tự nhiên siêu lành tính giúp làm sạch sâu bã nhờn mà không làm khô da đầu, tạo đường dẫn cho nang tóc hô hấp...</p>
+                                <span class="blog-readmore">Đọc tiếp <i class="fa-solid fa-arrow-right-long"></i></span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card blog-anim">
+                        <a href="#" class="blog-link-wrapper">
+                            <div class="blog-thumbnail">
+                                <div class="blog-category">Chăm Sóc Tóc</div>
+                                <img src="images/21.jpg" alt="Routine chăm sóc tóc" class="blog-img">
+                            </div>
+                            <div class="blog-content">
+                                <span class="blog-date"><i class="fa-regular fa-calendar"></i> 01 Tháng 5, 2026</span>
+                                <h3 class="blog-title">Routine 3 bước phục hồi tóc rụng sau sinh tại nhà cực đơn giản.</h3>
+                                <p class="blog-excerpt">Hướng dẫn chi tiết cách kết hợp dầu gội bồ kết và xịt dưỡng vỏ bưởi để giải quyết nỗi ám ảnh rụng tóc của các mẹ bỉm sữa...</p>
+                                <span class="blog-readmore">Đọc tiếp <i class="fa-solid fa-arrow-right-long"></i></span>
+                            </div>
+                        </a>
+                    </article>
+
+                </div>
+
+                <div class="blog-footer-action blog-anim">
+                    <a href="#" class="btn-outline-dark">XEM TẤT CẢ BÀI VIẾT</a>
+                </div>
+
+            </div>
+        </section>
+        </main>
+
+
+<section class="faq-form-section" id="order-form">
+            <div class="faq-form-bg" style="background-image: url('images/24.jpg');"></div>
+            <div class="faq-form-overlay"></div>
+
+            <div class="container relative-z">
+                <div class="faq-form-grid">
+                    
+                    <div class="faq-col faq-anim">
+                        <h2 class="faq-title">Bạn Còn Băn Khoăn?</h2>
+                        <p class="faq-desc">Giải đáp nhanh những thắc mắc phổ biến nhất từ khách hàng của Herbario trước khi trải nghiệm sản phẩm.</p>
+                        
+                        <div class="accordion-container">
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Tóc rụng bao lâu thì dùng có hiệu quả?</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Tùy vào cơ địa, thông thường sau 3-4 tuần sử dụng đều đặn mỗi ngày, bạn sẽ thấy lượng tóc rụng giảm hẳn khi gội đầu. Sau 6-8 tuần, tóc con sẽ bắt đầu lún phún mọc lên ở các vùng đường rẽ ngôi.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Sản phẩm có làm bết tóc hay gây gàu không?</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Tuyệt đối không ạ! Nước dưỡng Herbario được thiết kế với vòi xịt phun sương siêu mịn, tinh chất thẩm thấu nhanh trong 3 giây. Sản phẩm không chứa cồn hay nền dầu nặng, giúp tóc tơi bồng, da đầu thoáng mát.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Phụ nữ mang thai và sau sinh dùng được không?</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Sản phẩm 100% thuần chay, cam kết không chứa Paraben, không Sulfate, không hương liệu nhân tạo độc hại. Cực kỳ lành tính và được khuyên dùng cho các mẹ bỉm sữa đang gặp tình trạng rụng tóc nội tiết.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-col faq-anim">
+                        <div class="lead-form-box">
+                            <div class="form-header">
+                                <h3>Đăng Ký Tư Vấn & Đặt Hàng</h3>
+                                <p>Để lại thông tin, chuyên viên Herbario sẽ gọi lại hỗ trợ bạn trong vòng 30 phút!</p>
+                            </div>
+                            
+                            <form action="#" method="POST" id="herbario-lead-form">
+                                <div class="input-group">
+                                    <label for="fullname">Họ và tên của bạn *</label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-regular fa-user"></i>
+                                        <input type="text" id="fullname" name="fullname" placeholder="VD: Nguyễn Thị Ngọc Thảo" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="input-group">
+                                    <label for="phone">Số điện thoại liên hệ *</label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <input type="tel" id="phone" name="phone" placeholder="VD: 0903 789 646" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="input-group">
+                                    <label for="hair_condition">Tình trạng tóc hiện tại</label>
+                                    <div class="input-wrapper select-wrapper">
+                                        <i class="fa-solid fa-clipboard-list"></i>
+                                        <select id="hair_condition" name="hair_condition">
+                                            <option value="" disabled selected>Chọn tình trạng tóc của bạn</option>
+                                            <option value="rung_nhieu">Rụng nhiều, hói chữ M / đỉnh đầu</option>
+                                            <option value="kho_xo">Tóc khô xơ, chẻ ngọn do hóa chất</option>
+                                            <option value="rung_sau_sinh">Rụng tóc sau sinh / thay đổi nội tiết</option>
+                                            <option value="khac">Khác (Cần tư vấn thêm)</option>
+                                        </select>
+                                        <i class="fa-solid fa-chevron-down select-arrow"></i>
+                                    </div>
+                                </div>
+                                
+                                <button type="submit" class="btn-submit-form">
+                                    NHẬN TƯ VẤN NGAY <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                                
+                                <p class="form-security-notice">
+                                    <i class="fa-solid fa-lock"></i> Thông tin của bạn được bảo mật tuyệt đối theo tiêu chuẩn Privacy-First.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    
+                    <div class="footer-col footer-brand footer-anim">
+                        <a href="#" class="footer-logo">
+                            <img src="images/1.jpg" alt="Herbario Logo" class="footer-logo-img">
+                        </a>
+                        <p class="footer-slogan">Vẻ đẹp thực sự bắt nguồn từ sự thuần khiết. Herbario tự hào mang tinh túy thảo mộc Việt vào quy trình chăm sóc mái tóc hiện đại của bạn.</p>
+                        <div class="footer-socials">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col footer-contact footer-anim">
+                        <h4 class="footer-title">Thông Tin Liên Hệ</h4>
+                        <ul class="contact-list">
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>7/50A Đường số 182, Phường Tăng Nhơn Phú A, TP. Thủ Đức, TP. Hồ Chí Minh.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <span>Hotline: 0903.789.646</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>Email: vnherbario@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-earth-asia"></i>
+                                <span>Website: www.herbario.io.vn</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col footer-links footer-anim">
+                        <h4 class="footer-title">Hỗ Trợ Khách Hàng</h4>
+                        <ul class="footer-nav">
+                            <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#">Chính sách đổi trả 1-1</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Câu hỏi thường gặp (FAQ)</a></li>
+                            <li><a href="#">Hệ thống đại lý</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col footer-certs footer-anim">
+                        <h4 class="footer-title">Chứng Nhận Uy Tín</h4>
+                        <div class="cert-grid">
+                            <img src="images/22.jpg" alt="Chứng nhận FDA" class="cert-icon">
+                            <img src="images/23.jpg" alt="Chứng nhận ISO" class="cert-icon">
+                        </div>
+                        <div class="bct-register">
+                            <img src="https://herbario.vn/images/dk.png" alt="Đã đăng ký bộ công thương" class="bct-img">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Herbario Vietnam. Tất cả quyền lợi được bảo hộ. Thiết kế bởi nhóm EGG PAPER - COFER.</p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="floating-widgets">
+            <a href="tel:0903789646" class="widget-item widget-phone" title="Gọi ngay">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="#" class="widget-item widget-zalo" title="Chat Zalo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/1200px-Icon_of_Zalo.svg.png" alt="Zalo">
+            </a>
+            <button class="widget-item widget-top" id="backToTop" title="Lên đầu trang">
+                <i class="fa-solid fa-chevron-up"></i>
+            </button>
+        </div>
+
+        <button class="chatbot-toggler" id="chatbot-toggler">
+            <span class="chat-icon-open"><i class="fa-solid fa-message"></i></span>
+            <span class="chat-icon-close"><i class="fa-solid fa-xmark"></i></span>
+            <span class="chat-notification">1</span>
+        </button>
+
+        <div class="chatbot-window" id="chatbot-window">
+            
+            <header class="chat-header">
+                <div class="chat-agent-profile">
+                    <div class="agent-avatar">
+                        <i class="fa-solid fa-headset"></i>
+                        <span class="online-dot"></span>
+                    </div>
+                    <div class="agent-info">
+                        <h3>Trợ Lý Herbario</h3>
+                        <p>Đang hoạt động</p>
+                    </div>
+                </div>
+            </header>
+
+            <ul class="chat-messages" id="chat-messages">
+                <li class="chat-msg bot-msg">
+                    <p>Chào bạn! Cảm ơn bạn đã ghé thăm Herbario. Bạn đang quan tâm đến hiệu quả giảm rụng tóc của Xịt Vỏ Bưởi & Bồ Kết, hay cần hỗ trợ thông tin gì khác ạ?</p>
+                </li>
+            </ul>
+
+            <div class="chat-quick-replies" id="quick-replies">
+                <button class="quick-btn" data-text="Giá sản phẩm bao nhiêu?">Giá sản phẩm?</button>
+                <button class="quick-btn" data-text="Bao lâu thì tóc mọc?">Bao lâu mọc tóc?</button>
+                <button class="quick-btn" data-text="Địa chỉ cửa hàng ở đâu?">Địa chỉ cửa hàng?</button>
+            </div>
+
+            <div class="chat-input-area">
+                <textarea id="chat-input" placeholder="Nhập câu hỏi của bạn vào đây..." spellcheck="false" required></textarea>
+                <button id="send-chat-btn"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+            
+        </div>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
